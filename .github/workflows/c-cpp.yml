@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: ls -la
-      - run: gcc main.cpp
+      - run: g++ main.cpp
       - run: ./a.out
   # Explore-GitHub-Actions:
   #   runs-on: ubuntu-latest
