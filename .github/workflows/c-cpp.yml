@@ -9,7 +9,7 @@ jobs:
       - run: sudo apt-get install clang-format
       - run: clang-format -style=llvm -dump-config > .clang-format
       - run: clang-format -i *.cpp
-      - run: actions/upload-artifact@v3
+      - run: actions/upload-artifact@v4
   build:
     runs-on: ubuntu-latest
     steps:
