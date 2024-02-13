@@ -2,14 +2,6 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  clangFormating:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: sudo apt-get install clang-format
-      - run: clang-format -style=llvm -dump-config > .clang-format
-      - run: clang-format -i *.cpp
-      - run: actions/upload-artifact@v4
   build:
     runs-on: ubuntu-latest
     steps:
